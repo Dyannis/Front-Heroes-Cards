@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: lightgoldenrodyellow;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, .5) 5px 5px 7px;
+    font-family: 'Antonio', sans-serif;
+}
+
+
+h1 {
+    font-size: 14vw;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#container {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: lightgoldenrodyellow;
+}
+
+/* Header */
+
+header {
+    background-image: url('img/lars-bo-nielsen-TFFN15Zn7n0-unsplash.jpg');
+    background-size: cover;
+    background-position: bottom;
+    filter: sepia(40%);
+    filter: grayscale(20%);
+    position: relative;
+    border-bottom: 5px solid #000;
+}
+
+header figure {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+header img {
+    margin: 1em;
+    background-color: lightgoldenrodyellow;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+/* NAV */
+
+.navhaut {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navhaut li {
+    display: none;
+}
+
+.navhaut .icon {
+    display: block;
+}
+
+.navhaut a {
+    display: block;
+    text-decoration: none;
+    padding: 0 1em;
+    color: lightgoldenrodyellow;
+    font-size: 1.4em;
+    line-height: 3em;
+}
+
+.navhaut a:hover {
+    background-color: lightgoldenrodyellow;
+    color: #000;
+}
+
+.responsively li {
+    display: block;
+}
+
+/* WELCOME */
+
+.welcome {
+    background-image: url('img/ship-the-argo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.466),
+        -16px -16px 32px #6666664d;
+
+}
+
+.welcome ul {
+    list-style-type: none;
+}
+
+.size {
+    text-align: center;
+    font-size: 7vw;
+    text-shadow: rgba(0, 0, 0, .5) 5px 5px 7px;
+}
+
+
+/* HISTORY */
+
+.history {
+    background-color: #283b63;
+    /* height: 100vh; */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.history h2 {
+    text-align: center;
+    margin-top: 175px;
+}
+
+.flex-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.history img {
+    width: 85%;
+
+}
+
+.history figure {
+    margin-top: 70px;
+    margin-bottom: 22.5px;
+}
+
+.htext {
+    max-width: 80%;
+    margin-bottom: 22.5px;
+}
+
+.htext p {
+    text-align: justify;
+}
+
+/*  HEROES */
+
+.heroes {
+    height: 100vh;
+    margin-top: 45px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.466),
+        -16px -16px 32px #6666664d;
+}
+
+.heroes img {
+    width: 90%;
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+    filter: sepia(40%);
+    filter: grayscale(20%);
+}
+
+.title-heroes {
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 50%;
+    /* font-size: 20vw; */
+    transform: translate(-50%, -70%);
+}
+
+.heroesdown {
+    position: absolute;
+    z-index: 0;
+}
+
+/* Heroes 2 */
+
+.content-heroes {
+    width: 100%;
+    background: rgb(24, 24, 24);
+    min-height: 100vh;
+    z-index: 2;
+    position: absolute;
+}
+
+.content-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 175px;
+}
+
+.content-images img {
+    width: 100%;
+}
+
+.content-images h2,
+.content-images p {
+    margin: 20px;
+}
+
+.btncard {
+    text-align: center;
+    margin-top: 70px;
+    min-height: 15vh;
+    background-color: rgb(24, 24, 24);
+}
+
+.btncard a {
+    padding: 15px;
+    background-color: lightgoldenrodyellow;
+    color: #283b63;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.btncard a:hover {
+
+    background-color: #283b63;
+    color: lightgoldenrodyellow;
+}
+
+/* CARD */
+
+.contain-cards {
+    height: 120vh;
+    background: #545454;
+    position: relative;
+    width: 90%;
+    margin-top: 45px;
+    background-image: url('./img/bg-cards.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+.content {
+    height: 100vh;
+    width: 80%;
+}
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+   flex-direction: column;
+   justify-content: center; */
+}
+
+.perso {
+    width: 57%;
+    min-width: 150px;
+    height: 60px;
+    margin-top: 150px;
+    margin-left: 5px;
+    background: #283b63;
+    display: flex;
+    align-items: center;
+    border: 3px solid lightgoldenrodyellow;
+    transition: .1s;
+    cursor: pointer;
+    z-index: 1;
+    /* position: absolute;
+    top: 0; */
+}
+
+.perso:hover {
+    border: 4px solid #fff;
+    box-shadow: 0px 0px 10px #fff, inset 0px 0px 10px lightgoldenrodyellow;
+}
+
+.playerone {
+    position: absolute;
+    top: 0;
+}
+
+.playerone .left {
+    background-image: url("./img/apollo-card.png");
+    background-size: cover;
+    background-color: aqua;
+}
+
+.playertwo {
+    position: absolute;
+    top: 75px;
+}
+
+.playertwo .left {
+    background-image: url("./img/Aphrodite-card.png");
+    background-size: cover;
+    background-color: aqua;
+}
+
+.playerthree {
+    position: absolute;
+    top: 150px;
+}
+
+.playerthree .left {
+    background-image: url("./img/Athena-card.png");
+    background-size: cover;
+    background-color: aqua;
+}
+
+.left {
+    height: 100%;
+    width: 40%;
+    background: #444444;
+}
+
+.right h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+/* .mouse {
+    width: 400px;
+    height: 400px;
+    background-color: #283b63;
+    margin: auto;
+} */
+
+.perso-bg {
+    /* width: 60%; */
+
+    display: initial;
+}
+
+.base {
+    max-width: 350px;
+    margin: 0 auto;
+    position: absolute;
+    top: 400px;
+    left: 8%;
+    /* height: 60%; */
+    /* !!! flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2),
+        0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 0 20px;
+    transform-style: preserve-3d;
+}
+
+.base h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #283b63;
+    text-shadow: none;
+}
+
+.base img {
+    width: 100%;
+    min-width: 175px;
+    object-fit: cover;
+}
+
+.onereveal {
+    display: none;
+}
+
+.tworeveal {
+    display: none;
+}
+
+.threereveal {
+    display: none;
+}
+
+.base figure {
+    text-align: center;
+}
+
+.info p {
+    color: #283b63;
+    text-align: center;
+    padding: 5px;
+}
+
+.import-card {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 710px) {
+
+    h1 {
+        font-size: 90px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    header {
+        background-position: center;
+        border-bottom: none;
+    }
+
+    /* NAV */
+
+    .navhaut {
+        display: flex;
+        justify-content: center;
+        background-color: #283b63;
+    }
+
+    .navhaut .iconli {
+        display: none;
+    }
+
+    .navhaut li {
+        display: block;
+    }
+
+    /* Welcome */
+
+    .welcome {
+        width: 85%;
+    }
+
+    .size {
+        font-size: 50px;
+    }
+
+
+    /* History */
+
+    .flex-history {
+        flex-wrap: nowrap;
+    }
+
+    .history img {
+        width: 80%;
+
+    }
+
+    .history figure {
+        max-width: 700px;
+        margin-top: 100px;
+    }
+
+    .htext {
+        max-width: 40%;
+        padding-right: 3em;
+        margin-bottom: 0px;
+    }
+
+    /* HEROES */
+
+    .content-images {
+        flex-wrap: nowrap;
+    }
+
+    /* Card */
+
+    .content {
+        height: 100vh;
+        width: 50%;
+        margin: auto;
+    }
+
+    /*     
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2em 0;
+    } */
+
+    .perso {
+        height: 80px;
+        width: 250px;
+        min-width: 200px;
+        position: absolute;
+        left: 20px;
+        margin-top: 22.5px;
+    }
+
+    .playerone {
+        top: 250px;
+    }
+
+    .playertwo {
+        top: 350px;
+    }
+
+    .playerthree {
+        top: 450px;
+    }
+
+    .left {
+        width: 40%;
+    }
+
+    .base {
+        /* height: 500px; */
+        /* width: 400px; */
+        left: 41%;
+        top: 250px;
+        /* height: 500px; */
+    }
+
+    .base img {
+        width: auto;
+    }
+}
